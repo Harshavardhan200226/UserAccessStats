@@ -1,0 +1,59 @@
+﻿Problem Statement
+Organizations often need visibility into who has access to which repositories in Github
+Your task is to build a service that connects to GitHub and generates a report showing which users have access to which repositories within a given organization.
+The application should authenticate with GitHub, retrieve the relevant data from the organization, and expose an API endpoint that returns a structured access report.
+________________
+
+
+Functional Requirements
+Your application should:
+1. Authenticate with GitHub using a secure authentication mechanism.
+
+2. Retrieve the repositories belonging to a GitHub organization.
+
+3. Determine which users have access to each repository.
+
+4. Generate an aggregated view mapping users to the repositories they can access.
+
+5. Expose an API endpoint that returns this access report in JSON format.
+
+The output should clearly show which repositories each user has access to, along with any relevant access details.
+________________
+
+
+Scale Requirement
+Your implementation should support organizations that may have:
+   * 100+ repositories
+
+   * 1000+ users with repository access
+
+Design your implementation to work efficiently at this scale and avoid unnecessary sequential API calls where possible.
+________________
+
+
+Technical Expectations
+Your solution should demonstrate:
+      * clean code organization
+
+      * proper error handling
+
+      * efficient API usage
+
+      * readable and maintainable code
+
+________________
+
+
+Deliverables
+Please submit a public repository on GitHub containing:
+         * the full source code
+
+         * a README explaining:
+
+            * how to run the project
+
+            * how authentication is configured
+
+            * how to call the API endpoint
+
+            * any assumptions or design decisions you made
